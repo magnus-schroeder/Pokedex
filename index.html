@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Pokédex</title>
+    <meta charset="UTF-8" />
+  </head>
 
-<head>
-	<title>Parcel Sandbox</title>
-	<meta charset="UTF-8" />
-</head>
+  <body>
+    <header>
+      <img src="/img/pokemon-1536855_1280.png" width="200" />
+      <h1>Pokédex</h1>
+      <div id="app"></div>
+      <script src="src/index.js"></script>
+      <link href="/src/styles.css" type="text/css" rel="stylesheet" />
+    </header>
 
-<body>
-	<div id="app"></div>
-
-	<script src="src/index.js">
-	</script>
-</body>
-
+    <main>
+      <form>
+        <input
+          placeholder="Search for id, name or type"
+          type="text"
+          id="search"
+          value=""
+        />
+      </form>
+      <table id="results"></table>
+    </main>
+  </body>
 </html>
