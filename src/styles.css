@@ -1,0 +1,78 @@
+* {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "PokemonGb";
+  src: url("/fonts/PokemonGb-RAeo.ttf") format("truetype");
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 160px 60px 50px;
+}
+
+.pokeball {
+  height: 134px;
+  width: 100%;
+  background-image: url(/img/background.png);
+  background-position: center;
+}
+
+h1 {
+  font-family: "PokemonGb";
+  font-size: 40px;
+  text-align: center;
+  color: rgb(38, 38, 37);
+}
+
+form {
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+}
+
+table {
+  display: grid;
+  grid-auto-rows: 40px;
+  color: rgb(38, 38, 37);
+}
+
+#rowFirst {
+  font-size: 10px;
+  align-self: flex-end;
+  background-color: rgb(240, 16, 37);
+  color: white !important;
+  height: 20px;
+}
+
+#Id,
+.id {
+  text-align: left;
+}
+
+.resultrow {
+  display: grid;
+  grid-template-columns: 50px 100px 1fr 150px;
+  margin-top: -1px;
+  width: 80vw;
+  max-width: 1000px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+td,
+.sprite {
+  align-self: center;
+  text-align: center;
+}
